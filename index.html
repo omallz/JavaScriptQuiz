@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>JavaScript Quiz</title>
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<!-- JavaScript required for mobile buttons - See JS in https://getbootstrap.com/docs/4.0/getting-started/introduction/ -->
+	<script src="assets/js/jquery-3.4.1.slim.min.js"></script>
+	<script src="assets/js/popper.min.js"></script>
+	<script src="assets/js/bootstrap.bundle.min.js"></script>
+	<script src="assets/js/script.js"></script>
+  </head>
+  <body style="background:#f9fbfd;">
+
+	<div class="container">
+		<header>
+			<h1 class="text-center mt-3 mb-5">JavaScript Quiz</h1>
+		</header>
+
+		<div class="row">
+			<div class="col-sm-8 offset-sm-2 card" style="background:#fff;padding:0px 40px;box-shadow: 0 2px 6px 0 rgba(0,0,0,.2);border-radius: 8px;">
+				<h2 class="mt-5">JavaScript Quiz</h2>
+				<hr>
+				<textarea style="border: 2px dashed #ccc;border-radius: 8px;" readonly id="password" placeholder="Your Secure Password" aria-label="Generated Password" rows="5"></textarea>
+				<hr>
+				<div class="d-flex justify-content-around mb-5">
+					<button class="btn btn-primary" style="border-radius: 20px;" id="generate" onclick="generatePassword()">Generate Password</button>
+					<button class="btn btn-secondary" style="border-radius: 20px;" id="copy" onclick="copyToClip()">Copy to Clipboard</button>
+				</div>
+			</div>	
+		</div>
+	</div>
+  </body>
+</html>
